@@ -2,14 +2,16 @@
   <div class="row ">
     <div class="col-md-12">
       <div class="toolbar">
-        <button class="float-right" (click)="layoutService.addItem()">Add Item</button>
+        <button class="btn btn-sm btn-info float-right" (click)="layoutService.addItem()">Add Widget</button>
       </div>
     </div>
   </div>
 
   <gridster [options]="options">
     <gridster-item *ngFor="let item of layout" [item]="item">
-      <button (click)="layoutService.deleteItem(item)">Delete Item</button>
+      <h1>Widget-Title
+      <button class="btn delete" (click)="layoutService.deleteItem(item)"><img src='../../../assets/images/delete.png'></button>
+    </h1>
     </gridster-item>
   </gridster>
 </div>

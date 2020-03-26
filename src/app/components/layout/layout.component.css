@@ -7,6 +7,28 @@
     flex-direction: column;
 }
 
-button {
-    height: 30px;
+button.delete {
+    border: none;
+    background: transparent;
+    width: 30px;
+    padding: 4px;
+    position: absolute;
+    right: 5px;
+    top: 4px;
+  }
+
+  button.delete img{
+    width: 100%;
+    height: auto;
+   }
+
+
+  gridster-item h1{
+    font-size: 16px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  gridster{
+      background: #e6e6e6;
   }
