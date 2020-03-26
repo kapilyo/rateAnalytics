@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row ">
+    <div class="col-md-12">
+      <div class="toolbar">
+        <button class="float-right" (click)="layoutService.addItem()">Add Item</button>
+      </div>
+    </div>
+  </div>
+
+  <gridster [options]="options">
+    <gridster-item *ngFor="let item of layout" [item]="item">
+      <button (click)="layoutService.deleteItem(item)">Delete Item</button>
+    </gridster-item>
+  </gridster>
+</div>

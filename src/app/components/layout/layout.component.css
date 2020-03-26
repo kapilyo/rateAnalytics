@@ -1,0 +1,12 @@
+:host .toolbar {
+    height: 40px;
+}
+:host gridster {
+    display: flex;
+    height: calc(100vh - 115px);
+    flex-direction: column;
+}
+
+button {
+    height: 30px;
+  }
