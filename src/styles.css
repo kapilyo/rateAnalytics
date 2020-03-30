@@ -2,3 +2,329 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+
+
+.v-sprite1 {
+    background: url('assets/images/sprite.png') no-repeat;
+    position: relative;
+}
+
+.module-icon {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-position: -1px -2px;
+    top: 6px;
+    right: 5px;
+}
+
+.BP-icon {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-position: -3px -20px;
+    top: 3px;
+    right: 5px;
+}
+
+.TS-icon {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-position: -3px -44px;
+    top: 3px;
+    right: 5px;
+}
+
+.TC-icon {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background-position: -3px -67px;
+    top: 3px;
+    right: 5px;
+}
+
+.map-requirement {
+    width: 17px;
+    height: 20px;
+    display: inline-block;
+    background-position: -3px -91px;
+    right: -15px;
+}
+
+.glyphicon-remove {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-position: -52px -108px;
+}
+
+.glyphicon-question-sign {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -26px -51px;
+    top: 3px;
+    left: 3px;
+}
+
+.glyphicon-copy {
+    width: 14px;
+    height: 16px;
+    display: inline-block;
+    background-position: -50px -20px;
+    top: 2px;
+}
+
+.glyphicon-question-sign:before {
+    content: "";
+}
+
+.glyphicon-pencil {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-position: 3px -157px;
+    top: 3px;
+}
+
+.glyphicon-calendar {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background-position: -49px -154px;
+    top: 1px;
+}
+
+.glyphicon-pause {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -26px -160px;
+    top: 3px;
+    left: -2px;
+}
+
+.glyphicon-stop {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-position: -70px -3px;
+    top: 3px;
+}
+
+.v-AssocParaFlow:last-child::after {
+    content: '';
+    background: none;
+}
+
+.flaticon-draw {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -51px -40px;
+    top: 3px;
+}
+
+.flaticon-delete {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -51px -61px;
+    top: 2px;
+}
+
+.flaticon-arrows-4 {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: -24px -71px;
+    top: 3px;
+}
+
+.flaticon-arrows-5 {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: -24px -95px;
+    top: 3px;
+}
+
+.flaticon-add-button-inside-black-circle {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: 0px -115px;
+    top: 3px;
+}
+
+.flaticon-download {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-position: 0px -137px;
+    top: 3px;
+    text-indent: -9999px;
+}
+
+.flaticon-logout {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-position: -23px -1px;
+    top: 7px;
+}
+
+.flaticon-question-mark-in-dark-circle {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-position: -24px -26px;
+    top: 7px;
+}
+
+.Group {
+    width: 16px;
+    height: 16px;
+    background: url(../Images/ObjectRep-Group.png) no-repeat;
+    display: inline-block;
+    position: relative;
+    /*top: 4px;*/
+    /*left: -4px;*/
+}
+
+.flaticon-closed-container {
+    width: 16px;
+    height: 16px;
+    background: url(../Images/ObjectRep-Complex.png) no-repeat;
+    display: inline-block;
+    position: relative;
+    /*top: 2px;
+    left: -4px;*/
+}
+
+.Action {
+    width: 16px;
+    height: 16px;
+    background: url(../Images/ObjectRep-Action.png) no-repeat;
+    display: inline-block;
+    position: relative;
+    /*top: 2px;
+    left: -4px;*/
+}
+
+
+.Parameter {
+    width: 16px;
+    height: 16px;
+    background: url(../Images/ObjectRep-Param.png) no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    /*left: -4px;*/
+}
+
+.flaticon-check-mark {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -26px -140px;
+    top: 3px;
+    left: -5px;
+}
+
+.flaticon-medical {
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+    background-position: -48px -1px;
+    left: 0px;
+    top: 2px;
+}
+
+.flaticon-cogwheel {
+    width: 15px;
+    height: 16px;
+    display: inline-block;
+    background-position: -68px -20px;
+    top: 4px;
+}
+
+.flaticon-square {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-position: -69px -37px;
+    top: 4px;
+}
+
+.flaticon-remove-button {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -69px -73px;
+    top: 4px;
+}
+
+.flaticon-refresh-page-arrow-button {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -69px -54px;
+    top: 4px;
+}
+
+.flaticon-local-exe {
+    width: 18px;
+    height: 16px;
+    display: inline-block;
+    background-position: -68px -109px;
+    top: 4px;
+}
+
+
+.v-remove-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-position: -26px -120px;
+    top: 3px;
+    left: -2px;
+}
+
+.v-edit-icon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-position: -69px -90px;
+    top: 4px;
+    right: -1px;
+}
+
+.expand-arrow {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-position: -50px -96px;
+    top: 4px;
+}
+
+.collapse-arrow {
+    width: 14px;
+    height: 15px;
+    display: inline-block;
+    background-position: -50px -80px;
+    top: 2px;
+}
+
+.v-excel-icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-position: -47px -131px;
+    top: 7px;
+}
+
+
