@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../services/user.service';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +14,9 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     public userService: UserService,
+    private toastr: ToastrService,
     private route: ActivatedRoute,
-    private router: Router,) { }
+    private router: Router, ) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -25,10 +27,12 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    if(this.userService.authenticateUser(this.loginForm.value))
+    if (this.userService.authenticateUser(this.loginForm.value)) {
+      this.toastr.success('Welcome ' + this.loginForm.value.username);
       this.router.navigate(['/dashboard']);
-      else
-      alert('invadlid credentials');
+    }
+    else
+    this.toastr.error('Invalid Credentials');
   }
 
 }

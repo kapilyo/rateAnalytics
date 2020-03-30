@@ -7,6 +7,10 @@
     flex-direction: column;
 }
 
+.toolbar button{
+  margin: 0 5px;
+}
+
 button.delete {
     border: none;
     background: transparent;

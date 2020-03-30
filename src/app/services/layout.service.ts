@@ -28,7 +28,7 @@ export class LayoutService {
     }
   };
 
-  public layout: GridsterItem[] = [];
+  public layout: GridsterItem[] = localStorage.getItem('currentUser') ? JSON.parse(localStorage.getItem('currentUser')).layout : [];
     // { id: 'a1', cols: 2, rows: 1, y: 0, x: 0, title: 'item A1' },
     // { id: 'a2', cols: 2, rows: 1, y: 0, x: 2, title: 'item A2' },
     // { id: 'a3', cols: 2, rows: 1, y: 0, x: 0, title: 'item A3' },
@@ -71,6 +71,12 @@ export class LayoutService {
       componentRef: dragId
     };
     this.components = Object.assign([], components, { [updateIdx]: componentItem });
+  }
+
+  saveWidgets():void{
+    
+    this.layout
+    
   }
 
   getComponentRef(id: string): string {
