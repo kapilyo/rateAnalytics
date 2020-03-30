@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GridsterConfig, GridsterItem } from 'angular-gridster2';
-import { LayoutService } from '../../services/layout.service';
+import { LayoutService, IComponent  } from '../../services/layout.service';
 
 
 @Component({
@@ -10,6 +10,7 @@ import { LayoutService } from '../../services/layout.service';
 })
 export class LayoutComponent implements OnInit {
 
+  public currentUser;
   get options(): GridsterConfig {
     return this.layoutService.options;
   }
@@ -17,8 +18,15 @@ export class LayoutComponent implements OnInit {
     return this.layoutService.layout;
   }
 
-  constructor(public layoutService: LayoutService) { }
+  get components(): IComponent[] {
+    return this.layoutService.components;
+  }
 
+  constructor(public layoutService: LayoutService) { 
+    this.currentUser = localStorage.getItem('currentUser')? JSON.parse(localStorage.getItem('currentUser')) : '';
+  }
+  
+  
   ngOnInit(): void {
   }
 

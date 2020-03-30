@@ -1,17 +1,25 @@
+
+<app-header></app-header>
 <div class="container-fluid">
   <div class="row ">
     <div class="col-md-12">
       <div class="toolbar">
         <button class="btn btn-sm btn-info float-right" (click)="layoutService.addItem()">Add Widget</button>
+
+        <!-- <div class="draggable" draggable="true" (dragend)="layoutService.dropItem('widget1')">widget 1</div>
+
+        <div class="draggable" draggable="true" (dragend)="layoutService.dropItem('widget2')">widget 2</div> -->
+
       </div>
     </div>
   </div>
 
   <gridster [options]="options">
-    <gridster-item *ngFor="let item of layout" [item]="item">
-      <h1>Widget-Title
-      <button class="btn delete" (click)="layoutService.deleteItem(item)"><img src='../../../assets/images/delete.png'></button>
-    </h1>
+    <gridster-item *ngFor="let item of layout" [item]="item" (dragover)="layoutService.setDropId(item.id)">
+      <h1>{{item.title}}
+        <button class="btn delete" (click)="layoutService.deleteItem(item)"><img
+            src='../../../assets/images/delete.png'></button>
+      </h1>
     </gridster-item>
   </gridster>
 </div>

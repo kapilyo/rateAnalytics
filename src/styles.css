@@ -184,48 +184,6 @@ body{
     background-position: -24px -26px;
     top: 7px;
 }
-
-.Group {
-    width: 16px;
-    height: 16px;
-    background: url(../Images/ObjectRep-Group.png) no-repeat;
-    display: inline-block;
-    position: relative;
-    /*top: 4px;*/
-    /*left: -4px;*/
-}
-
-.flaticon-closed-container {
-    width: 16px;
-    height: 16px;
-    background: url(../Images/ObjectRep-Complex.png) no-repeat;
-    display: inline-block;
-    position: relative;
-    /*top: 2px;
-    left: -4px;*/
-}
-
-.Action {
-    width: 16px;
-    height: 16px;
-    background: url(../Images/ObjectRep-Action.png) no-repeat;
-    display: inline-block;
-    position: relative;
-    /*top: 2px;
-    left: -4px;*/
-}
-
-
-.Parameter {
-    width: 16px;
-    height: 16px;
-    background: url(../Images/ObjectRep-Param.png) no-repeat;
-    display: inline-block;
-    position: relative;
-    top: 4px;
-    /*left: -4px;*/
-}
-
 .flaticon-check-mark {
     width: 16px;
     height: 16px;
