@@ -74,7 +74,6 @@ export class LayoutService {
   }
 
   saveWidgets(): void {
-    //todo
     console.log(this.layout);
   }
 
