@@ -12,13 +12,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { Widget1Component } from './components/widget1/widget1.component';
 import { Widget2Component } from './components/widget2/widget2.component';
 import { LoginComponent } from './components/login/login.component';
+import { SafePipe } from './others/safe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    SafePipe
   ],
   entryComponents: [
     Widget1Component,
