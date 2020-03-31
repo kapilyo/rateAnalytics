@@ -1,36 +1,47 @@
-.logo{
+.logo {
+    max-width: 191px;
+    background: #fff;
+    clear: both;
+    display: inline-block;
     font-size: 18px;
-    padding: 12px 10px;
+    padding: 11px 15px;
 }
 
+.logo img {
+    width: 100%;
+}
 
-.header{
-    /* background: #17a2b8; */
+.header {
     background: #1976d2;
     color: #fff;
-    margin-bottom: 10px;
+    box-shadow: 0 2px 12px #b3b3b3;
 }
 
+.header-right-block {
+    float: right;
+    display: inline-block;
+    text-align: right;
+}
 
-.logout{
-    padding: 12px 1px 12px 15px;
+.logout {
+    padding: 10px 15px;
     cursor: pointer;
 }
 
-.user-title{
+.user-title {
     display: inline-block;
     float: right;
     margin: 15px 20px 0px;
     font-size: 12px;
 }
 
-.user-title span{
+.user-title span {
     color: #6ee1f3;
     font-size: 16px;
     padding-left: 5px;
 }
 
-.right-border{
+.right-border {
     border-left: 1px solid #2a7bcc;
     box-shadow: 0 0 0 #14739e inset, -1px 0 0 #14739e;
 }

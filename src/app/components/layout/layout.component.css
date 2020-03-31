@@ -1,5 +1,6 @@
 :host .toolbar {
     height: 40px;
+    margin-top: 12px;
 }
 :host gridster {
     display: flex;

@@ -15,6 +15,7 @@ export interface IComponent {
 export class LayoutService {
 
   public options: GridsterConfig = {
+    compactType: 'compactLeft&Up',
     displayGrid: 'none',
     draggable: {
       enabled: true
