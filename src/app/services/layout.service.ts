@@ -14,15 +14,17 @@ export interface IComponent {
 })
 export class LayoutService {
 
+  public editableGrid:boolean = false;
+
   public options: GridsterConfig = {
-    compactType: 'compactLeft&Up',
-    displayGrid: 'none',
+    compactType: 'none', //compactLeft&Up
+    displayGrid: 'onDrag&Resize',
     draggable: {
-      enabled: true
+      enabled: false
     },
     pushItems: true,
     resizable: {
-      enabled: true
+      enabled: false,
     },
     itemChangeCallback: function (item: GridsterItem, itemComponent: GridsterItemComponentInterface) {
       console.info('itemChanged', item, itemComponent);
@@ -40,6 +42,17 @@ export class LayoutService {
 
   constructor() { }
 
+
+  configuireWidgets():void{
+    this.options.draggable.enabled = true;
+    this.editableGrid = true;
+    this.options.resizable.enabled = true;
+    if (this.options.api && this.options.api.optionsChanged) {
+      this.options.api.optionsChanged();
+    }
+  }
+
+
   addItem(): void {
     this.layout.push({
       cols: 5,
@@ -50,6 +63,9 @@ export class LayoutService {
       title: 'default title'
     });
   }
+
+
+
 
   deleteItem(id) {
     var item = this.layout.find(d => d.id == id.id);
@@ -76,6 +92,12 @@ export class LayoutService {
 
   saveWidgets(): void {
     console.log(this.layout);
+    this.editableGrid = false;
+    this.options.draggable.enabled = false;
+    this.options.resizable.enabled = false;
+    if (this.options.api && this.options.api.optionsChanged) {
+      this.options.api.optionsChanged();
+    }
   }
 
   getComponentRef(id: string): string {

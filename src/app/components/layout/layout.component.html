@@ -3,8 +3,12 @@
   <div class="row ">
     <div class="col-md-12">
       <div class="toolbar">
-        <button class="btn btn-sm btn-success float-right" (click)="layoutService.saveWidgets()">Save Widgets</button>
-        <button class="btn btn-sm btn-info float-right" (click)="layoutService.addItem()">Add Widget</button>
+        <button class="btn btn-sm btn-success float-right" *ngIf="!layoutService.editableGrid"
+          (click)="layoutService.configuireWidgets()">Configure</button>
+        <button class="btn btn-sm btn-success float-right" *ngIf="layoutService.editableGrid"
+          (click)="layoutService.saveWidgets()">Save Widgets</button>
+        <button class="btn btn-sm btn-info float-right" *ngIf="layoutService.editableGrid"
+          (click)="layoutService.addItem()">Add Widget</button>
 
         <!-- <div class="draggable" draggable="true" (dragend)="layoutService.dropItem('widget1')">widget 1</div>
 
@@ -17,7 +21,7 @@
   <gridster [options]="options">
     <gridster-item *ngFor="let item of layout" [item]="item" (dragover)="layoutService.setDropId(item.id)">
       <h1>{{item.title}}
-        <button class="btn delete" (click)="layoutService.deleteItem(item)">
+        <button class="btn delete" (click)="layoutService.deleteItem(item)" *ngIf="layoutService.editableGrid">
           <span class="v-sprite1 flaticon-delete"></span>
         </button>
       </h1>
@@ -35,8 +39,8 @@
 
         <ng-template #doughnutBlock>
           <div *ngIf="item.gridtype == 'doughnut'; else emptyBlock">
-              <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
-              </canvas>
+            <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
+            </canvas>
           </div>
 
 
