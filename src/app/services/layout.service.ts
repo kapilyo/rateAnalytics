@@ -26,6 +26,8 @@ export class LayoutService {
     resizable: {
       enabled: false,
     },
+    minCols: 10,
+    minRows: 10,
     itemChangeCallback: function (item: GridsterItem, itemComponent: GridsterItemComponentInterface) {
       console.info('itemChanged', item, itemComponent);
     }
@@ -55,9 +57,9 @@ export class LayoutService {
 
   addItem(): void {
     this.layout.push({
-      cols: 5,
+      cols: 2,
       id: UUID.UUID(),
-      rows: 5,
+      rows: 3,
       x: 0,
       y: 0,
       title: 'default title'
