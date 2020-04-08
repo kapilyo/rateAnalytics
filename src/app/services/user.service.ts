@@ -25,16 +25,14 @@ export class UserService {
       username: 'james',
       password: 'james',
       layout: [
-        { id: 'a1', cols: 2, rows: 1, y: 0, x: 0, title: 'James item A1', gridtype: '', gridData: '' },
-        { id: 'a2', cols: 2, rows: 1, y: 0, x: 2, title: 'James item A2', gridtype: '', gridData: '' },
-        { id: 'a3', cols: 2, rows: 1, y: 0, x: 0, title: 'James item A3', gridtype: '', gridData: '' },
-        { id: 'a4', cols: 2, rows: 1, y: 0, x: 2, title: 'James item A4', gridtype: '', gridData: '' }],
-
+        { id: 'a1', cols: 2, rows: 1, y: 0, x: 0, title: 'James item A1', gridtype: 'barChart', gridData: 'barChart' },
+        { id: 'a2', cols: 2, rows: 1, y: 0, x: 2, title: 'James item A2', gridtype: 'doughnut', gridData: 'doughnut' }]
     },
     {
       username: 'smith',
       password: 'smith',
       layout: [
+        // tslint:disable-next-line: max-line-length
         { id: 'a1', cols: 2, rows: 1, y: 0, x: 0, title: 'James item A1', gridtype: 'iframe', gridData: 'https://app.powerbi.com/reportEmbed?reportId=39da5463-5535-4074-9afe-89ecfde89080&groupId=232a0e3f-dcca-41d9-98cb-aa8418aefc78&autoAuth=true&ctid=13085c86-4bcb-460a-a6f0-b373421c6323&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLWVhc3QyLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9' }],
 
 

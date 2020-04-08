@@ -38,6 +38,9 @@ button.delete {
       background: #e6e6e6;
   }
 
+  gridster iframe{
+    height: 100vh;
+}
 
   .draggable {
     padding: 10px;
