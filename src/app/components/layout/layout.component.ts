@@ -90,12 +90,14 @@ export class LayoutComponent implements OnInit {
   }
 
   chartClicked = function (eve) {
-    if (!this.drillDowned) {
-      this.drillDowned = true;
-      var activePoints = eve.active;
-      if (activePoints[0]) {
-        this.CardoughnutChartType = 'bar';
+
+    var activePoints = eve.active;
+    if (activePoints[0]) {
+      if (!this.drillDowned) {
+        this.drillDowned = true;
+        
         var chartData = activePoints[0]['_chart'].config.data;
+        this.CardoughnutChartType = 'bar';
         var idx = activePoints[0]['_index'];
         var label = chartData.labels[idx];
         if (label == 'chevrolet') {
