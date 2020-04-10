@@ -1,53 +1,74 @@
 :host .toolbar {
-    height: 40px;
-    margin-top: 12px;
-}
-:host gridster {
-    display: flex;
-    height: calc(100vh - 115px);
-    flex-direction: column;
+  height: 40px;
+  margin-top: 12px;
 }
 
-.toolbar button{
+:host gridster {
+  display: flex;
+  height: calc(100vh - 115px);
+  flex-direction: column;
+}
+
+.toolbar button {
   margin: 0 5px;
 }
 
 button.delete {
-    border: none;
-    background: transparent;
-    width: 30px;
-    padding: 4px;
-    position: absolute;
-    right: 5px;
-    top: 4px;
-  }
-
-  button.delete img{
-    width: 100%;
-    height: auto;
-   }
-
-
-  gridster-item h1{
-    font-size: 16px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-  }
-
-  gridster{
-      background: #e6e6e6;
-  }
-
-  gridster iframe{
-    height: 100vh;
+  border: none;
+  background: transparent;
+  width: 30px;
+  padding: 4px;
+  position: absolute;
+  right: 5px;
+  top: 4px;
 }
 
-  .draggable {
-    padding: 10px;
-    width: 200px;
-    border: solid 2px #000;
-    margin-left: 20px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
+button.delete img {
+  width: 100%;
+  height: auto;
+}
+
+gridster-item h1 {
+  font-size: 16px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+gridster {
+  background: #e6e6e6;
+}
+
+gridster iframe {
+  height: 100vh;
+}
+
+.draggable {
+  padding: 10px;
+  width: 200px;
+  border: solid 2px #000;
+  margin-left: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.backDrillbtn {
+  position: absolute;
+  left: 20px;
+  top: 90px;
+  background: #e8e8e8;
+}
+
+.powerFrameBlock {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 40px;
+  right: 0;
+}
+
+.powerFrameBlock iframe {
+  background-color: red;
+  border: 0px !important;
+}
